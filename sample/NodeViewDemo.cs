@@ -108,7 +108,7 @@ namespace GtkSamples {
 			}
 		}
 
-		public static void Main (string[] args)
+		public static void Main22 (string[] args)
 		{
 			DateTime start = DateTime.Now;
 			Application.Init ();

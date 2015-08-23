@@ -24,9 +24,9 @@ using System.IO;
 
 namespace Mono.AssemblyCompare
 {
-	public class Driver
+	public class Driver3
 	{
-		public static int Main (string [] args)
+		public static int Main4 (string [] args)
 		{
 			if (args.Length == 0)
 				return 1;
@@ -226,7 +226,8 @@ namespace Mono.AssemblyCompare
 				if (string.IsNullOrEmpty (t.Namespace))
 					continue;
 
-				if (!Driver.AbiMode && ((t.Attributes & TypeAttributes.VisibilityMask) != TypeAttributes.Public))
+				if (!Driver3.AbiMode 
+				    && ((t.Attributes & TypeAttributes.VisibilityMask) != TypeAttributes.Public))
 					continue;
 
 				if (t.DeclaringType != null)
@@ -432,7 +433,7 @@ namespace Mono.AssemblyCompare
 				AddAttribute (nclass, "enumtype", Utils.CleanupTypeName (value_type.FieldType));
 			}
 
-			if (!Driver.AbiMode) {
+			if (!Driver3.AbiMode) {
 
 				MethodDefinition [] ctors = GetConstructors (type);
 				if (ctors.Length > 0) {
@@ -568,12 +569,12 @@ namespace Mono.AssemblyCompare
 				if (field.IsSpecialName)
 					continue;
 
-				if (Driver.AbiMode && field.IsStatic)
+				if (Driver3.AbiMode && field.IsStatic)
 					continue;
 
 				// we're only interested in public or protected members
 				FieldAttributes maskedVisibility = (field.Attributes & FieldAttributes.FieldAccessMask);
-				if (Driver.AbiMode && !field.IsNotSerialized) {
+				if (Driver3.AbiMode && !field.IsNotSerialized) {
 					list.Add (field);
 				} else {
 					if (maskedVisibility == FieldAttributes.Public

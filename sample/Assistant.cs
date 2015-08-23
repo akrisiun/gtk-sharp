@@ -15,7 +15,7 @@ namespace GtkSharpSamples {
 
 	public class SampleAssistant : Assistant {
 
-		public static int Main (string[] argv)
+		public static int Main4 (string[] argv)
 		{
 			Application.Init ();
 			new SampleAssistant ().ShowAll ();

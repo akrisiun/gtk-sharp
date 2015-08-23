@@ -20,7 +20,7 @@ namespace GtkSamples {
 			return cal;
 		}
 
-		public static int Main (string[] args)
+		public static int Main7 (string[] args)
 		{
 			Application.Init ();
 			Window win = new Window ("Calendar Tester");

@@ -4,7 +4,7 @@ using System;
 
 class CustomScrollableWidgetTest {
 
-	public static int Main (string[] args)
+	public static int Main18 (string[] args)
 	{
 		Gtk.Application.Init ();
 		Window win = new Window ("Custom Scrollable Widget Test");

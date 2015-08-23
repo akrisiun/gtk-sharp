@@ -75,7 +75,7 @@ public class CustomCellRenderer : CellRenderer
 
 public class Driver : Gtk.Window
 {
-	public static void Main ()
+	public static void Main8 ()
 	{
 		Gtk.Application.Init ();
 		new Driver ();

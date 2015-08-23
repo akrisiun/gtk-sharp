@@ -16,7 +16,7 @@ namespace GtkSharp {
 		[DllImport ("libgtk-3.so.0")]
 		static extern void gtk_widget_show (IntPtr handle);
 
-		public static int Main (string[] args)
+		public static int Main12 (string[] args)
 		{
 			Application.Init ();
 			GLib.GType gtype = LookupGType (typeof (InstantiationTest));

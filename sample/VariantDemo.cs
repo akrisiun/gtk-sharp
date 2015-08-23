@@ -43,7 +43,7 @@ namespace sample
 			Console.WriteLine ("out str " + str);
 		}
 
-		public static void Main (string[] args)
+		public static void Main32 (string[] args)
 		{
 			new VariantDemo ();
 		}

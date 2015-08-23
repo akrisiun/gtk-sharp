@@ -27,7 +27,7 @@ namespace GtkSharp.Auditing {
 
 	public class ExtractMissing  {
 
-		public static int Main (string[] args)
+		public static int Main2 (string[] args)
 		{
 			if (args.Length != 1 || !File.Exists (args [0])) {
 				Console.WriteLine ("Usage: extract-missing <filename>");

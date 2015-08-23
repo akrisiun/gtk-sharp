@@ -20,7 +20,7 @@ namespace Mono.AssemblyCompare
 {
 	class Driver
 	{
-		static int Main (string [] args)
+		static int Main3 (string [] args)
 		{
 			if (args.Length != 2) {
 				Console.WriteLine ("Usage: mono mono-api-diff.exe <assembly 1 xml> <assembly 2 xml>");

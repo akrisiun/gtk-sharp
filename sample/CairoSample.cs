@@ -4,7 +4,7 @@ using Cairo;
 
 class CairoSample : DrawingArea
 {
-	static void Main ()
+	static void Main6 ()
 	{
 		Application.Init ();
 		Window win = new Window ("Cairo with Gtk# 3");

@@ -15,7 +15,7 @@ namespace GtkSamples {
 
 		static MainLoop ml;
 
-		public static void Main (string[] args)
+		public static void Main24 (string[] args)
 		{
 			CommandLineSyncTest ();
 			CommandLineAsyncTest ();

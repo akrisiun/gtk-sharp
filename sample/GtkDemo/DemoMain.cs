@@ -18,7 +18,7 @@ namespace GtkDemo
 		private TreeStore store;
 		private TreeIter oldSelection = TreeIter.Zero;
 
-		public static void Main (string[] args)
+		public static void Main27 (string[] args)
 		{
 			Application.Init ();
 			new DemoMain ();

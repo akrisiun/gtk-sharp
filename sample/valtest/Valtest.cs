@@ -2,7 +2,7 @@
 //
 // Copyright (c) 2005 Novell, Inc.
 
-using Gtksharp;
+// using Gtksharp;
 using System;
 
 public class Valtest {
@@ -24,7 +24,7 @@ public class Valtest {
 	static IntPtr POINTER_VAL;
 	static Gtk.Widget OBJECT_VAL;
 
-	public static int Main ()
+	public static int Main2 ()
 	{
 		Gtk.Application.Init ();
 

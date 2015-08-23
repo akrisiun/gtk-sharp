@@ -3,7 +3,7 @@ using Gtk;
 using System;
 
 class CustomWidgetTest {
-	public static int Main (string[] args)
+	public static int Main9 (string[] args)
 	{
 		Gtk.Application.Init ();
 		Window win = new Window ("Custom Widget Test");

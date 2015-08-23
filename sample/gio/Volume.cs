@@ -5,7 +5,7 @@ namespace TestGio
 {
 	public class TestVolume
 	{
-		static void Main (string[] args)
+		static void Main29 (string[] args)
 		{
 			GLib.GType.Init ();
 			VolumeMonitor monitor = VolumeMonitor.Default;

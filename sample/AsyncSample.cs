@@ -33,7 +33,7 @@ namespace Samples
 		static int count;
 		static Thread main_thread;
 		
-		public static int Main (string[] args)
+		public static int Main19 (string[] args)
 		{
 			Application.Init ();
 			main_thread = Thread.CurrentThread;

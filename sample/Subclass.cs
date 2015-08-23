@@ -11,7 +11,7 @@ namespace GtkSamples {
 
 	public class ButtonAppSubclass  {
 
-		public static int Main (string[] args)
+		public static int Main16 (string[] args)
 		{
 			Application.Init ();
 			Window win = new Window ("Button Tester");

@@ -87,7 +87,7 @@ namespace GtkSamples {
 			}
 		}
 
-		public static void Main (string[] args)
+		public static void Main26 (string[] args)
 		{
 			new TreeViewDemo ();	
 		}

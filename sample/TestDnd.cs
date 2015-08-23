@@ -465,7 +465,7 @@ public class TestDnd {
 		Console.WriteLine ("Delete the data!");
 	}
 
-	public static void Main (string [] args)
+	public static void Main25 (string [] args)
 	{
 		Gtk.Window window;
 		Table table;

@@ -188,7 +188,7 @@ class PolarFixed : Container {
 }
 
 class Test {
-	public static void Main ()
+	public static void Main23 ()
 	{
 		uint r;
 		double theta;

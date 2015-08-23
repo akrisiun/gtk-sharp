@@ -34,7 +34,7 @@ using System.Xml.Xsl;
 
 namespace Mono.AssemblyCompare
 {
-	public class Driver
+	public class Driver3B
 	{
 		static int Main (string [] args)
 		{

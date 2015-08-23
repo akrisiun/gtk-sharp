@@ -38,7 +38,7 @@ public class TestMount
 	static GLib.IFile file;
 	static Gtk.MountOperation operation;
 
-	static void Main ()
+	static void Main30 ()
 	{
 		Gtk.Application.Init ();
 		file = FileFactory.NewForUri (new Uri ("smb://admin@192.168.42.3/myshare/test"));

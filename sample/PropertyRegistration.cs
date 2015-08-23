@@ -10,7 +10,7 @@ namespace GtkSamples {
 
 	public class TestObject : GLib.Object {
 
-		public static int Main (string[] args)
+		public static int Main13 (string[] args)
 		{
 			GLib.GType.Init ();
 			TestObject obj = new TestObject ();

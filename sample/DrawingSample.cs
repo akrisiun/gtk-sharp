@@ -8,7 +8,7 @@ using System.Drawing;
 class X {
 	static DrawingArea a, b;
 	
-	static void Main ()
+	static void Main10 ()
 	{
 		Application.Init ();
 		Gtk.Window w = new Gtk.Window ("System.Drawing and Gtk#");
@@ -18,7 +18,7 @@ class X {
 
 		// Event-based drawing
 		b = new DrawingArea ();
-		b.ExposeEvent += new ExposeEventHandler (ExposeHandler);
+		// b.ExposeEvent += new ExposeEventHandler (ExposeHandler);
 		b.SizeAllocated += new SizeAllocatedHandler (SizeAllocatedHandler);
 
 		Button c = new Button ("Quit");
@@ -49,6 +49,7 @@ class X {
 		rect = args.Allocation;
 	}
 
+	/*
 	static void ExposeHandler (object obj, ExposeEventArgs args)
 	{
 		Gdk.EventExpose ev = args.Event;
@@ -60,7 +61,8 @@ class X {
 				g.DrawPie (p, 0, 0, rect.Width, rect.Height, 50, 90);
 			}
 		}
-	}
+	} 
+	 */
 }
 
 //
@@ -73,15 +75,17 @@ class PrettyGraphic : DrawingArea {
 		SetSizeRequest (200, 200);
 	}
 			       
-	protected override bool OnExposeEvent (Gdk.EventExpose args)
+	protected // override
+		bool OnExposeEvent (Gdk.EventExpose args)
 	{
+		/*
 		using (Graphics g = Gtk.DotNet.Graphics.FromDrawable (args.Window)){
 			Pen p = new Pen (Color.Blue, 1.0f);
 
 			for (int i = 0; i < 600; i += 60)
 				for (int j = 0; j < 600; j += 60)
 					g.DrawLine (p, i, 0, 0, j);
-		}
+		} */
 		return true;
 	}
 }
@@ -103,8 +107,10 @@ class MovingText : DrawingArea {
 		return true;
 	}
 	
-	protected override bool OnExposeEvent (Gdk.EventExpose args)
+	protected // override
+		bool OnExposeEvent (Gdk.EventExpose args)
 	{
+		/*
 		using (Graphics g = Gtk.DotNet.Graphics.FromDrawable (args.Window)){
 			using (Brush back = new SolidBrush (Color.White), 
 			       fore = new SolidBrush (Color.Red)){
@@ -115,7 +121,7 @@ class MovingText : DrawingArea {
 					d += 3;
 					g.DrawString ("Mono", f, fore, 0, 0);
 			}
-		}
+		} */
 
 		return true;
 	}

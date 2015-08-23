@@ -12,7 +12,7 @@ namespace GtkSamples {
 
 	public class HelloWorld  {
 
-		public static int Main (string[] args)
+		public static int Main11 (string[] args)
 		{
 			Application.Init ();
 			Gtk.Window win = new Gtk.Window ("Gtk# Hello World");

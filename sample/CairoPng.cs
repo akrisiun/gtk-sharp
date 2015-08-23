@@ -55,7 +55,7 @@ public class CairoPng
 		}
 	}
 
-	static void Main ()
+	static void Main31 ()
 	{
 		var app = new CairoPng ();
 		int iterations = 100;

@@ -142,7 +142,7 @@ namespace GtkSamples {
 					      null, null, (int)ToolbarStyle.BothHoriz)
 		};
 
-		public static int Main (string[] args)
+		public static int Main3 (string[] args)
 		{
 			Application.Init ();
 			Window win = new Window ("Action Demo");

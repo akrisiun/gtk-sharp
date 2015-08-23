@@ -11,7 +11,7 @@ namespace GtkSharp.Samples {
 
 	public class MenuApp {
 
-		public static void Main (string[] args)
+		public static void Main21 (string[] args)
 		{
 			Application.Init();
 			Window win = new Window ("Menu Sample App");

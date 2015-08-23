@@ -44,7 +44,7 @@ namespace GtkSamples {
 			((CellRendererText) cell).Text = val.b;
 		}
 		
-		public static void Main (string[] args)
+		public static void Main20 (string[] args)
 		{
 			Application.Init ();
 

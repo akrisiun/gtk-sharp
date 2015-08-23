@@ -2,7 +2,7 @@
 //
 // Copyright (c) 2005 Novell, Inc.
 
-using Gtksharp;
+// using Gtksharp;
 using System;
 
 public class OpaqueTest {
@@ -17,7 +17,7 @@ public class OpaqueTest {
 		System.GC.WaitForPendingFinalizers ();
 	}
 
-	public static int Main ()
+	public static int Main2 ()
 	{
 		Gtk.Application.Init ();
 

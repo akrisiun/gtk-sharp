@@ -18,7 +18,7 @@ namespace GtkSamples {
 		static int count;
 		static Thread thr;
 		
-		public static int Main (string[] args)
+		public static int Main17 (string[] args)
 		{
 			Application.Init ();
 			Gtk.Window win = new Gtk.Window ("Gtk# Hello World");

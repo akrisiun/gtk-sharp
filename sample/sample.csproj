@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -9,7 +9,6 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>sample</RootNamespace>
     <AssemblyName>sample</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +20,7 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
     <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
     <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="TreeModelDemo.cs" />
@@ -81,17 +82,6 @@
     <Compile Include="GtkDemo\DemoTextView.cs" />
     <Compile Include="GtkDemo\DemoTreeStore.cs" />
     <Compile Include="GtkDemo\DemoUIManager.cs" />
-    <Compile Include="valtest\Valtest.cs" />
-    <Compile Include="opaquetest\OpaqueTest.cs" />
-    <Compile Include="opaquetest\generated\GCFunc.cs" />
-    <Compile Include="opaquetest\generated\GtksharpSharp.GCFuncNative.cs" />
-    <Compile Include="opaquetest\generated\GtksharpSharp.OpaqueReturnFuncNative.cs" />
-    <Compile Include="opaquetest\generated\GtksharpSharp.RefcountedReturnFuncNative.cs" />
-    <Compile Include="opaquetest\generated\Opaque.cs" />
-    <Compile Include="opaquetest\generated\OpaqueReturnFunc.cs" />
-    <Compile Include="opaquetest\generated\Opaquetest.cs" />
-    <Compile Include="opaquetest\generated\Refcounted.cs" />
-    <Compile Include="opaquetest\generated\RefcountedReturnFunc.cs" />
     <Compile Include="test\TestCheckButton.cs" />
     <Compile Include="test\TestColorSelection.cs" />
     <Compile Include="test\TestComboBox.cs" />
@@ -108,7 +98,6 @@
     <Compile Include="gio\Volume.cs" />
     <Compile Include="gtk-gio\MountOperation.cs" />
     <Compile Include="CairoPng.cs" />
-    <Compile Include="valtest\Gtksharp\Valobj.cs" />
     <Compile Include="GtkDemo\DemoSpinner.cs" />
     <Compile Include="GtkDemo\DemoCssBasics.cs" />
     <Compile Include="GtkDemo\DemoThemingStyleClasses.cs" />
@@ -123,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\pango\pango.csproj">

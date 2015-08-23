@@ -17,8 +17,9 @@ namespace WidgetViewer {
 		static Window viewer = null;
 		static Button button = null;
 		static VBox box2 = null;
-		
-		static void Main ()
+
+		// ankr: this realy main
+		public static void Main ()
 		{
 			Application.Init ();
 			window = new Window ("Gtk# Widget viewer");

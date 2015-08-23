@@ -5,7 +5,7 @@ namespace TestGio
 {
 	public class TestAppInfo
 	{
-		static void Main (string[] args)
+		static void Main28 (string[] args)
 		{
 			if (args.Length != 1) {
 				Console.WriteLine ("Usage: TestAppInfo mimetype");
