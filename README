@@ -1,19 +1,36 @@
+### Building on Ubuntu Vagrant Trusty, x86_64
+
+For Debian
+```
+sudo apt-get install -y mono-devel mono-xbuild libmono-opensystem-c4.0-cil
+sudo apt-get install -y libgtk-3-dev libtool autoconf make
+git clone https://github.com/akrisiun/gtk-sharp.git gtk-sharp
+cd gtk-sharp
+./configure
+make
+# success? I can't believe
+cd sample/bin/Debug
+mono sample.exe
+```
+
+### Official mono documentation
+
 The Gtk# website can be found at: http://www.mono-project.com/GtkSharp
 
 Gtk# is a .NET language binding for the GTK+ toolkit and assorted GNOME
 libraries. Gtk# is free software, licensed under the GNU LGPL.
 
-Building & Installing Gtk#:
----------------------------
+### Building & Installing Gtk#:
 
     Install the gtk-3 development headers first. On Debian, this can be done using:
     apt-get install libgtk-3-dev
 
     The build is the traditional:
-
+```
         ./configure
         make
         make install
+```
 
     You may want to consider using configure's prefix option to install
     Gtk# using the same prefix as Mono.  That way all of your .NET assemblies
