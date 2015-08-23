@@ -1,10 +1,7 @@
 .deps
 .libs
 *-api.xml
-*.dll
-*.dll.config
-*.exe
-*.exe.config
+
 *.la
 *.lo
 *.msi
@@ -17,7 +14,10 @@
 *.userprefs
 *.wixobj
 *.wixpdb
-
+bin/Debug/
+bin/Release/
+[Dd]ebug/
+[Rr]elease/
 aclocal.m4
 autom4te.cache
 audit/data
